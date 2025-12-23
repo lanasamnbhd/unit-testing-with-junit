@@ -10,7 +10,7 @@ public class BankAccount {
         if (amount <= 0) {
             throw new IllegalArgumentException("Yatırılacak tutar 0'dan büyük olmalıdır.");
         }
-        this.balance -= amount;
+        this.balance += amount;
     }
 
     public void withdraw(double amount) {
